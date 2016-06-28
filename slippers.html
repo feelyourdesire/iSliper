@@ -4,6 +4,28 @@
 	<meta charset="UTF-8">
 	<title>潮流新世代＿Slipperssssssssssss</title>
 	<link type="text/css" rel="stylesheet" href="css/slippers.css">
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).on('click', '.arrow-right', function(){ 
+			number = $('#slider-pic').data('number');
+			if (number === 3) {
+				number = 0;
+			}
+
+			$('#slider-pic').attr("src", "asset/s" + (number+1).toString() + ".png");
+			$('#slider-pic').data('number', number + 1);
+			
+				
+		});
+		$(document).on('click', '.arrow-left', function(){ 
+			number = $('#slider-pic').data('number');
+			if (number === 1) {
+				number = 4;
+			}
+			$('#slider-pic').attr("src", "asset/s" + (number-1).toString() + ".png");
+			$('#slider-pic').data('number', number - 1);
+		});
+	</script>
 
 </head>
 
@@ -53,8 +75,14 @@
 <!--以上是搜尋欄-->
 
 	<div class="slider">
-
-		<img src="http://placehold.it/600x400" alt="" class="pic">
+		<a href="#/">
+			<img src="asset/left_arrow.png" alt="" class="arrow-left" height="150px" >
+		</a>
+		<img src="asset/s1.png" alt="" class="pic" id="slider-pic" data-number="1">
+		
+		<a href="#/">
+			<img src="asset/right_arrow.png" alt="" class="arrow-right" height="150px">
+		</a>
 		
 	</div>
 
