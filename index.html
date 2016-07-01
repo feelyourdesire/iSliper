@@ -2,402 +2,135 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Index</title>
-	<link type="text/css" rel="stylesheet" href="css/index.css">
+	<title>潮流新世代＿Slipperssssssssssss</title>
+	<link type="text/css" rel="stylesheet" href="css/slippers.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+ 	<script>
+ 		$(document).on('click', '.arrow-right', function(){ 
+ 			number = $('#slider-pic').data('number');
+			if (number === 3) {
+				number = 0;
+			}
 
-</head>
-<body>
-	<div class="header">
-		<div class="container">
-			<ul class="social-icon">
-				<li> <a href="#"><img src="http://placehold.it/20x20" alt=""> </a> </li>
-				<li> <a href="#"><img src="http://placehold.it/20x20" alt=""> </a> </li>
-				<li> <a href="#"><img src="http://placehold.it/20x20" alt=""> </a> </li>
-				<li> <a href="#"><img src="http://placehold.it/20x20" alt=""> </a> </li>
-				<li> <a href="#"><img src="http://placehold.it/20x20" alt=""> </a> </li>
-			</ul>
-		
+			$('#slider-pic').attr("src", "asset/s" + (number+1).toString() + ".png");
+			$('#slider-pic').data('number', number + 1);
 			
-			<ul class="navibar">
-				<li> <a href="#">HOME</a> </li>
-				<li> <a href="#">ABOUT</a> </li>
-				<li> <a href="#">FORUMS</a> </li>
-				<li> <a href="#">JOBS</a> </li>
-				<li> <a href="#">CONTACT</a> </li>
-			</ul>
-		</div>
-	</div>
-
-<!-- 以上是第一段header -->
-
-<!-- 以下是第二段header -->
-
-	<div class="menu">
-		<div class="container">
-			<h1><a href="#"><div class="upper-logo">Zoominfo</div></a></h1>	
-
-			<ul class="dropmenu">
 				
-				<li> <a href="#">HOME</a> </li>
-				<li> <a href="#">DOWNLOAD</a> </li>
-				<li> <a href="#">DROP MENU</a> 
-
-					<ul class="drop">
-						<li>menu1</li>
-						<li>menu2</li>
-					</ul>
-
-				</li>
-				<li> <a href="#">PURCHASE</a> </li>
-				<li> <a href="#">DROP MENU 1</a> 
-
-					<ul class="drop">
-						<li>menu3</li>
-						<li>menu2</li>
-					</ul>
-
-				</li>
-
-			</ul>
-
-			<div class="search">
-				<input type="text" placeholder="Search here...">
-				<button class="search-btn">search</button>
-			</div>
-		</div>
-	</div>
-
-<!-- 以上是第二段header -->
+		});
+		$(document).on('click', '.arrow-left', function(){ 
+			number = $('#slider-pic').data('number');
+			if (number === 1) {
+				number = 4;
+			}
+ 			$('#slider-pic').attr("src", "asset/s" + (number-1).toString() + ".png");
+ 			$('#slider-pic').data('number', number - 1);
+ 		});
+ 	</script>
+</head>
 
 
-<div class="container">
-
-<!-- 以下是第一段內容 -->
-	
-	<div class="part1">
+<body>
+	<div class="l_blue">
+		<img src="asset/slogo2.svg" alt="" class="logo">
 		
-		<figure class="focus-big">
-			<a href="#"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/2d/b9/ac/lobby-view.jpg" alt=""></a>
-			<figcaption><a href="#">AUgust rush is the best movie ever!</a></figcaption>
-		</figure>
-
-		<!-- 以下右邊四個小正方形 -->
-
-		<figure class="focus">
-			<a href="#"><img src="http://www.worldcasinodirectory.com/casinoimages/small/1018-uecsaemmzz.jpg" alt=""></a>
-			<figcaption><a href="#">August is the</a></figcaption>
-		</figure>
-		
-		<figure class="focus">
-			<a href="#"><img src="http://thumbs.dreamstime.com/t/view-city-bellano-lake-lecco-lombardy-italy-europe-48579980.jpg" alt=""></a>
-			<figcaption><a href="#">August is the</a></figcaption>
-		</figure>
-
-		<figure class="focus">
-			<a href="#"><img src="http://mahabaleshwar.mumbaigetaways.com/images/guest-room-hotel-lake-view.jpeg" alt=""></a>
-			<figcaption><a href="#">August is th</a></figcaption>
-		</figure>
-
-		<figure class="focus">
-			<a href="#"><img src="http://www.inishbofin.com/bandb/img/view.jpg" alt=""></a>
-			<figcaption><a href="#">August is the </a></figcaption>
-		</figure>
-
-	</div>
-
-<!-- 以上第一部分 -->
-
-<!-- 以下第二部分左半邊 -->
-
-	<div class="main">
-		
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor it. Ducimus tenetur, officiaeniet. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="www.yahoo.com.tw">jfoiqwj jdpjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet, consectetur adipisic. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet,molestiae. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor it. Ducimus tenetur, officiaeniet. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdpjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet, consectetur adipisic. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet,molestiae. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor it. Ducimus tenetur, officiaeniet. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdpjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet, consectetur adipisic. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet,molestiae. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor it. Ducimus tenetur, officiaeniet. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdpjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet, consectetur adipisic. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-		<div class="list">
-			<h2 class="title"><a href="#">jfoiqwj jdwp wofjcm jopjwpeof</a></h2>
-			<div class="list-pic"><img src="http:placehold.it/195x155" alt=""></div>
-			<div class="date">Saturday, May, 17, 2014</div>
-			<div class="content">Lorem ipsum dolor sit amet,molestiae. Nam.</div>
-			<div class="fb-like">讚</div>
-			<div class="more"><a href="#">More</a></div>
-		</div>
-
-
-		<ul class="pages">
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">Next</a></li>
+		<ul class="list_1">
+			<a href="#">
+				<li>網路商店<img class="icon" src="asset/icon1.png" alt="">|</li>
+			</a>
+			<a href="#">
+				<li>會員登入<img class="icon" src="asset/icon1.png" alt="">|</li>
+			</a>
+			<a href="#">
+				<li>官方粉絲團<img class="icon" src="asset/icon1.png" alt=""></li>
+			</a>
 		</ul>
 
 	</div>
+	
+	<!--以上是第一段 含ＬＯＧＯ-->
 
 
-<!-- 以上第二部分左邊（複製12個） -->
+	<div class="d_blue">
+		<ul class="list_2">
+			<li><a href="#">最新消息</a></li>
+			<li><a href="#">男鞋</a></li>
+			<li><a href="#">女鞋</a></li>
+			<li><a href="#">製鞋專家</a></li>
+			<li><a href="#">常見問題</a></li>
+			<li><a href="#">門市查詢</a></li>
+			<li><a href="#">客戶服務</a></li>
+			<li><a href="#">關於Slippers</a></li>
+		</ul>
 
-<!-- 以下第二部分右半邊side bar -->
-
-	<div class="sidebar">
-
-
-		<div class="fb-plugin">622 people liks!</div>
-
-
-		<div class="popular">
-
-			<div class="popular-pillow">POPULAR POST</div>
-
-			<div class="popular-list">
-
-				<img class="popular-pic" src="https://cdn.jovago.com/web_hotel_list_slider/pleasant-view-resort-hotel-21239-b59c62ffae76856c885f4c76ff49cf0189f87d58.jpg" alt="">
-
-				<a href="#">
-					<h3 class="title">August blablan  keliioeh lwiejoiehf.</h3>
-				</a>
-				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus tempora, similique omnis? Doloremque sint quos </span>
-			</div>
-
-			<div class="popular-list">
-
-				<img class="popular-pic" src="http://ee-townandcountry.s3.amazonaws.com/made/remote/http_s3-eu-west-1.amazonaws.com/ee-townandcountry/Night-Beach-photographed-by-Alain-Caboche_190_190_80.jpg" alt="">
-
-				<a href="#">
-					<h3 class="title">August blablan  keliioeh lwiejoiehf.</h3>
-				</a>
-				<br>
-				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus tempora, similique omnis? Doloremque sint quos </span>
-			</div>
-
-			<div class="popular-list">
-
-				<img class="popular-pic" src="http://assets.gocohospitality.com/uploads/1/page/190x190_7.jpg" alt="">
-
-				<a href="#">
-					<h3 class="title">August blablan  keliioeh lwiejoiehf.</h3>
-				</a>
-				<br>
-				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus tempora, similique omnis? Doloremque sint quos </span>
-			</div>
-
-			<div class="popular-list">
-
-				<img class="popular-pic" src="http://www.thatshamori.com/wp-content/uploads/2013/10/scotland-plane-view-190x190.jpg" alt="">
-
-				<a href="#">
-					<h3 class="title">August blablan  keliioeh lwiejoiehf.</h3>
-				</a>
-				<br>
-				<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus tempora, similique omnis? Doloremque sint quos </span>
-			</div>
+<!--以上是第二段中間選項-->
+	<div class="serarch">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		</form>
 	</div>
-
-		<div class="ad-sidebar">
-			<a href="#">
-				<img src="http://www.adpulsemedia.com/wp-content/uploads/2014/01/Restaurant-ad.jpg" alt="">
-			</a>
-		</div>
-
+	
 </div>
 
+<!--以上是搜尋欄-->
 
-	<div class="ad-footer">
-			<a href="#">
-				<img src="http://oldlma.localmedia.org/portals/3/downloads/NewspaperProject/BaseballAd_728x90.jpg" alt="">
-			</a>
-	</div>
+	<div class="slider">
 
-</div>
-<!-- 以上main結束 -->
-
-<!-- 以下footer開始 -->
-
-<div class="footer">
-	
-	<div class="footer-container">
-	
-		<div class="footer-block">
-			<img class="footer-logo" src="https://www.canteen.org.au/wp-content/themes/canteen/assets/img/global/mobile_logo.png" alt="">
-			<div class="footer-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nisi atque ratione animi minus hic, vel aliquam fugit expedita corporis. Illum perferendis, sapiente labore eveniet doloribus nisi modi quos.  <br>
-			<br>
-			tempore nostrum accusantium, molestias, facilis officia beatae, modi quia expedita sunt. Cumque maxime suscipit, voluptatum hic rem.
-			</div>
-		</div>
-
-		<div class="footer-block">
-			<div style="color:#fff;" class="popular-pillow">POPULAR POSTS</div>
-
-			<div class="footer-title"><a href="#">August ijiwhd hwoidh o cohw qowjd</a></div>
-			<div class="footer-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, enim magni explicabo accusamus quibusdam laboriosam ad culpa s.</div>
+		<a href="#/">
+			<img src="asset/left_arrow.png" alt="" class="arrow-left" height="150px" >
+		</a>
 		
-			<div class="footer-title"><a href="#">August ijiwhd hwoidh o cohw qowjd</a></div>
-			<div class="footer-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, enim magni explicabo accusamus quibusdam laboriosam s, nesciunt aliquid, possimus omnis.</div>
+		<img src="asset/s1.png" alt="" class="pic" id="slider-pic" data-number="1">
+		
+		<a href="#/">
+			<img src="asset/right_arrow.png" alt="" class="arrow-right" height="150px">
+		</a>
+		
+	</div>
 
-			<div class="footer-title"><a href="#">August ijiwhd hwoidh o cohw qowjd</a></div>
-			<div class="footer-content">Lorem ipsumoptio tempora laborum, consectetur, ex. Nostrum tenetur perferendis, nesciunt aliquid, possimus omnis.</div>
+<!--以上是中間slider-->
 
+	<div class="two">
+		
+		<div class="item" style="float:left;">
+			<a href="#"><img src="asset/item1.png" alt="">
+			<div class="name"><a href="#">藍白本色</a></div></a>
 		</div>
-	
-		<div class="footer-block">
-			<div style="color: #fff;" class="popular-pillow">ABOUT COMPANY</div>
-			<div class="footer-title" style="font-weight: bolder;"> Some Example Company Ltd.</div>
 
-			<div id="ltd">
-				Head office: Number 18, 12345 Street name, California, USA
-			</div>
-			
-			<ul class="contact">
-				<li><img src="http://placehold.it/20x20" alt="">
-				<span class="footer-content">Skype: Some support</span></li>
-				<li><img src="http://placehold.it/20x20" alt="">
-				<span class="footer-content">Home phone: (+886) 1123 122 231</span></li>
-
-				<li><img src="http://placehold.it/20x20" alt="">
-				<span class="footer-content">Mobile: (+886) 0935-703-975</span></li>
-
-				<li><img src="http://placehold.it/20x20" alt="">
-				<span class="footer-content">E-mail:</span> <span class="footer-title">something@gmail.com</span></li>			
-			</ul>
-
+		<div class="item" style="float:right;">
+			<a href="#"><img src="asset/item2.png" alt="">
+			<div class="name"><a href="#">我行我素</a></div></a>
 		</div>
 
 	</div>
-
-
-	<div class="disclaimer">
-
-		<p>Copyright@2013. <strong>Altas</strong>- All Rights Reserved </br>
-		Template Created by <strong>Oddthemes</strong> Powered by <strong>Blogger</strong>
-		</p>
-
 	</div>
 
-</div>
+<!--下面兩張照片-->
+
+	<div class="d_blue">
+		
+	</div>
+
+	<div class="blank">
+		
+	</div>
+
+	<div class="l_blue">
+
+		<ul class="list_3">
+			<li><a href="#">聯絡我們</a></li>
+			<li><a href="#">隱私權政策</a></li>
+			<li><a href="#">個人資料保護法</a></li>
+		</ul>
+
+	<div class="info">©2016 Copyright Lippers. All rights reserved. | 客服專線電話：087-8787-8787</div>
+		
+	</div>
+
+
+
 
 </body>
+
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
